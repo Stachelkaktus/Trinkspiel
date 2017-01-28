@@ -8,8 +8,8 @@ class game(models.Model):
 
 class player(models.Model):
     name = models.CharField(max_length=100)
-    sip_counter = models.IntegerField
-    shot_counter = models.IntegerField
+    sip_counter = models.IntegerField(null=True)
+    shot_counter = models.IntegerField(null=True)
     gender = (
         ('male', 'männlich'),
         ('female', 'weiblich'),
