@@ -16,5 +16,5 @@ class Player(models.Model):
     )
 
 class Task(models.Model):
-    target = Player
+    target = models.ForeignKey(Player)
     task = models.CharField(max_length=500)
